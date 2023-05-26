@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+   /* background: #9c9c9b;  */
+   background-image: url("../assets/back.jpg");  
+}
+.header{
+    width: 90%;
+    max-width: 470px;
+    background-image: /*linear-gradient(135deg,#c5e6de,#9889fc)*/url("../assets/pexels-tahir-shaw-186980.jpg");
+    color: #fff;
+    margin: 35px auto 0;
+    border-radius: 15px;
+    padding: 40px 35px;
+    text-align: center;
+}
+.searchBar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.searchBar input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #000;
+    padding: 10px 25px;
+    height: 50px;
+    border-radius: 20px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+
+}
+.searchBar button{
+    background: #ebfffc;
+    border: 0;
+    outline: 0;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+
+}
+.searchBar img{
+    width: 20px;
+    height: 20px;
+}
+.wImg{
+    width: 100px;
+    margin-top: 30px;
+}
+.weather h1{
+    font-size: 60px;
+    font-weight: 500;
+    color: #ebfffc;
+}
+.weather h2{
+    font-size: 35px;
+    font-weight: 400;
+    margin-top: -10px;
+    color: #ebfffc;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    color: #ebfffc;
+}
+.col img{
+    width: 50px;
+    margin-right: 0px;
+    
+}
+.humidity, .wind{
+    font-size: 20px;
+    margin-top: -6px;
+
+}
+.weather{
+    display: none;
+}
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+.heading{
+    text-align: center;
+    color: #ebfffc;
+    margin-top: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid;
+    width:26%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(11, 11, 119);
+    flex-basis: 20%;
+
+}
+
+
+
+@media  screen and (max-width:320px) {
+
+    .details{
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+    }
+ .wind{
+        margin-top: 40px;
+    
+    }
+    .weather h1{
+        font-size: 50px;
+    }
+    .weather h2{
+        font-size: 30px;
+    }
+    .heading{
+        font-size: 13px;
+        width:49%;
+    }
+    
+    .searchBar input{
+        width: 100%;
+        height: 40px;
+        font-size: 10px;
+    }
+    .searchBar button{
+        height: 35px;
+        width: 35px;    
+    }
+    .searchBar img{
+        width: 15px;
+        height: 15px;
+    }
+    .wImg{
+        width: 100px;
+        margin-top: 30px;
+    }
+       
+}
+
+@media screen and (max-width:450px) {
+
+    .weather h1{
+        font-size: 50px;
+    }
+    .weather h2{
+        font-size: 30px;
+    }
+    .heading{
+        font-size: 13px;
+        width:49%;
+    }
+    
+    .searchBar input{
+        width: 100%;
+        height: 40px;
+        font-size: 15px;
+    }
+    .searchBar button{
+        height: 38px;
+        width: 38px;    
+    }
+    .searchBar img{
+        width: 15px;
+        height: 15px;
+    }
+    .wImg{
+        width: 100px;
+        margin-top: 30px;
+    }
+    
+}
